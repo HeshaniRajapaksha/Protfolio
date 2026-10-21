@@ -2,6 +2,8 @@ import Image from "next/image";
 import { GithubIcon, LinkedinIcon, MailIcon, ArrowUpRightIcon } from "@/components/ui/Icons";
 import styles from "./Hero.module.css";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section className={styles.heroWrapper}>
@@ -76,7 +78,7 @@ export default function Hero() {
           <div className={styles.visual}>
             <div className={styles.imageFrame}>
               <Image
-                src="/images/heshani.jpg"
+                src={`${basePath}/images/heshani.jpg`}
                 alt="Heshani Rajapaksha - QA Engineer"
                 width={400}
                 height={500}
