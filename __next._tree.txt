@@ -1,5 +1,5 @@
 :HL["/Protfolio/_next/static/chunks/0_ne669p8so0i.css","style"]
 :HL["/Protfolio/_next/static/media/fba5a26ea33df6a3-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/Protfolio/_next/static/chunks/38r7jvhr1rea2.css","style"]
+:HL["/Protfolio/_next/static/chunks/3kcy1immoasic.css","style"]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"rT4jOflzsO5Gxoo_Gyw1e","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"_veg56PylB1RGEXTi0fGL","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
