@@ -1,16 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
   display: "swap",
 });
 
@@ -21,28 +15,23 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Heshani Rajapaksha | QA Engineer & Test Automation Specialist",
+  title: "Heshani Rajapaksha | QA Engineer",
   description:
-    "Portfolio of Heshani Rajapaksha - Quality Assurance Engineer specializing in Automated Testing, API Validation, CI/CD Quality Gates, and Zero-Defect Delivery.",
+    "Portfolio of Heshani Rajapaksha — Quality Assurance Engineer specializing in automated testing, API validation, and high-quality software delivery.",
   keywords: [
     "Heshani Rajapaksha",
     "QA Engineer",
     "Quality Assurance",
     "Automation Testing",
-    "Cypress",
-    "Playwright",
-    "Selenium",
-    "Postman",
-    "API Testing",
-    "Software Tester",
+    "Software Quality",
   ],
   authors: [{ name: "Heshani Rajapaksha" }],
   openGraph: {
-    title: "Heshani Rajapaksha | QA Engineer & Test Automation Specialist",
+    title: "Heshani Rajapaksha | QA Engineer",
     description:
-      "Quality Assurance Engineer focused on precision, test automation, and robust software delivery.",
+      "Portfolio of Heshani Rajapaksha — Quality Assurance Engineer.",
     url: "https://heshanirajapaksha.github.io/Protfolio/",
-    siteName: "Heshani Rajapaksha Portfolio",
+    siteName: "Heshani Rajapaksha",
     locale: "en_US",
     type: "website",
   },
@@ -54,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={plusJakarta.variable}>
       <body>{children}</body>
     </html>
   );
