@@ -1,0 +1,100 @@
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(8, 12, 20, 0.95);
+  padding: 3rem 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.brandGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.brandName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brandRole {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactLink:hover {
+  color: #38bdf8;
+}
+
+.copyright {
+  width: 100%;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.liveTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #34d399;
+}
+
+.tagDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .copyright {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

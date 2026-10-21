@@ -1,0 +1,245 @@
+.experienceSection {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background: rgba(8, 12, 20, 0.4);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Header */
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  margin-bottom: 4rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.experienceBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  margin-top: 0.25rem;
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 20px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-cyan), var(--accent-emerald) 50%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 55px;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 12px;
+  top: 24px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #080c14;
+  border: 3px solid var(--accent-cyan);
+  box-shadow: 0 0 12px var(--accent-cyan);
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.currentDot {
+  border-color: #10b981;
+  box-shadow: 0 0 14px #10b981;
+}
+
+.timelineItem:hover .timelineDot {
+  transform: scale(1.2);
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 1.85rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(56, 189, 248, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.5);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+}
+
+.roleTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.companyName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-top: 0.15rem;
+}
+
+.dateBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+}
+
+.activeDate {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  font-weight: 600;
+}
+
+.responsibilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.bulletPoint {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.bulletPoint::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+
+.skillsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.skillPill {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.skillPill:hover {
+  color: #ffffff;
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+@media (max-width: 640px) {
+  .experienceSection {
+    padding: 4.5rem 1rem;
+  }
+
+  .timelineItem {
+    padding-left: 35px;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timelineDot {
+    left: 2px;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
